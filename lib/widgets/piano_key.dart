@@ -17,6 +17,7 @@ class PianoKey extends StatelessWidget {
               width: double.infinity,
               height: double.infinity,
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor:Colors.white),
                 onPressed: onPressed,
                 child: const Text(''),
               ),
@@ -27,7 +28,7 @@ class PianoKey extends StatelessWidget {
             width: 250,
             height: 50,
             child: ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
               onPressed: () {
                 PlaySound().playSound('../assets/sounds/F.wav');
               },
